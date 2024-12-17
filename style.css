@@ -1,0 +1,196 @@
+.body {
+    background-color:#1c1c1c;
+    height:100%; 
+    margin: 0;    
+    padding: 0;   
+    overflow-x: auto; 
+    overflow-y: hidden; 
+
+}
+
+#container-all {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    height: 91vh;
+    bottom: 0;
+    background-color: #1c1c1c;
+
+}
+
+
+#paragraph1 {
+    display: flex;
+    align-items: center;
+    width: 800px;
+    font-family: sans-serif;
+    font-size: 35px;
+    color: white;            
+    text-align:right;
+    padding: 30px;
+    background-color: #1c1c1c;
+}
+
+@media (max-height: 655px) {
+
+    #paragraph1 {
+        font-size: 25px;
+    }
+
+}
+
+#paragraph2 {
+    display: flex;
+    align-items: center;
+    width: 900px;
+    font-family: sans-serif;
+    font-size: 40px;
+    color: white;          
+    text-align: right;
+    padding: 30px;
+    background-color: #1c1c1c;  
+}
+
+@media (max-height: 655px) {
+
+    #paragraph2 {
+        font-size: 25px;
+    }
+
+}
+
+#paragraph3 {
+    display: flex;
+    align-items: center;
+    font-family:'beat_techline';
+    font-size:50px;
+    font-variant-ligatures:right;
+    color: white;
+    padding: 30px;
+    background-color: #1c1c1c;
+}
+
+#paragraph4 {
+    display: flex;
+    align-items: center;
+    font-family:'beat_techregular';
+    font-size:50px;
+    color: white;
+    padding: 30px;
+    background-color: #1c1c1c;
+}
+
+@font-face {
+    font-family: 'beat_techregular';
+    src: url('fonts/beattech-reg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face{
+    font-family: 'beat_techline';
+    src: url('beattech-line-webfont.woff2') format('woff2'),
+         url('fonts/beattech-line-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.font-row{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    height: 10vh;
+    width: 100%;
+    margin: -5px 0;
+    background: white;
+}
+
+.scrolling-text{
+    font-family: 'beat_techregular';    
+    font-size: 5vh;
+    color:black;
+    position:absolute;
+    white-space: nowrap;
+    animation: scroll 5s linear infinite;
+    color: black;
+}
+
+@keyframes scroll{
+    0%{transform:translate(-50vw);}
+    100% {transform: translateX(100vw);}
+}
+
+
+
+#case {
+    height: 100%;
+    z-index: 10;
+}
+
+#cd {
+    position: relative;
+    left: -3%;
+    height: 100%; 
+    cursor: pointer; 
+    animation: spin 2s linear infinite; 
+    paused-animation-play-state: paused; 
+    z-index: 0;
+}
+
+       
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#myAudio {
+    background-color: red;
+    height: 100%;
+}
+
+h2 {
+    font-family:'Helvetica'; 
+    color: white;
+    font-size:40px;
+    position: relative;
+    left:auto;
+    margin-top:400px;
+    right:-8vh;
+    transform: rotate(270deg);  
+    z-index: 10;
+    white-space: nowrap; 
+    width: 200px; 
+}
+
+
+video {
+ max-height: 100%;
+}
+
+#thinklater{
+    font-family:'beat_techregular';    
+    color: white;
+    font-size:100px;
+position: auto;
+right:80vh}
+
+
+#giphy {
+    position: absolute; 
+    top: 80%; 
+    right:1%; 
+    transform: translateY(-50%);
+    width:80vh;
+    height:40vh 
+
+
+
+    
+

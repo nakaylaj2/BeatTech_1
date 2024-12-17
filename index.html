@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BEAT TECH</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+
+</head>
+<body>
+    <div class="font-row">
+        <div class="scrolling-text">BEAT TECH BEAT TECH BEAT TECH BEAT TECH BEAT TECH BEAT TECH BEAT TECH BEAT TECH</div>
+    </div>
+
+    <div id="container-all">
+        
+
+         <img id="case" src="images/think_later_cd.png" alt="Think Later CD" onclick="playPause()">
+
+         <img id="cd" src="images/blank-cd.png" alt="CD" onclick="playPause()"> 
+
+
+        <audio id="audio">
+            <source src="./audio/greedy.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+  
+
+        <div id="paragraph1">
+            Beat Tech is a modern, futuristic font that often features geometric shapes and sharp edges, making it ideal for tech-related designs, gaming, or anything that wants to convey a sense of innovation. The font is frequently used in branding, logos, and marketing materials for tech companies or products, as it evokes a sense of progress and cutting-edge technology.
+        </div>
+
+        <div id="paragraph2">
+            Jack Riley used Beat Tech on Tate McRae's "Greedy" to create a modern sound that resonates with the current pop landscape. Beat Tech typically involves a mix of electronic elements and production techniques that help elevate a track’s energy and catchiness, which aligns well with McRae's style. This collaboration likely aimed to enhance the song's appeal and make it more engaging for listeners.
+        </div>
+
+        <div id="example">
+            EXAMPLE
+        </div>
+        <div id="paragraph3">
+            ABCDEFGHIJKLM<br>
+            NOPQRSTUVWXYZ<br>
+            1234567890
+        </div>
+        
+        <div id="paragraph4">
+            ABCDEFGHIJKLM<br>
+            NOPQRSTUVWXYZ<br>
+            1234567890
+        </div>
+        
+        <h2>EXAMPLE USED IN VIDEOS</h2>
+
+        
+        <video autoplay muted loop preload playsinline>
+            <source src="videos/Greedy.mp4" type="video/mp4">
+        </video>
+        
+
+         <video autoplay muted loop preload playsinline>
+             <source src="videos/creditsvideo.mp4" type="video/mp4">
+         </video>
+       
+
+        <iframe id="giphy" 
+        src="https://giphy.com/embed/kzHjqXXsIjpxa3jUIZ" width="480" height="480" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/stickers/tatemcrae-tate-mcrae-tatesticker-kzHjqXXsIjpxa3jUIZ">via GIPHY</a></p>
+
+        <div id="thinklater">GREEDY FOR MORE<br >
+
+       <a id="customLink" href="file:///Volumes/maxone/GS%20Data%20Recovery/Recovered/Local%20Disk(E)/Existing%20Files/interactive-1/flash%20font%202/index.htmll" target="_blank">THINK LATER</a>
+
+
+    </div>
+
+
+   <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const cd = document.getElementById('cd'); 
+        const audio = document.getElementById('audio'); 
+
+       
+        cd.style.animationPlayState = 'paused';
+
+        
+        function togglePlayback() {
+            if (audio.paused) {
+                audio.play(); 
+            } else {
+                audio.pause(); 
+            }
+            syncAnimation(); 
+        }
+
+       
+        function syncAnimation() {
+            if (audio.paused) {
+                cd.style.animationPlayState = 'paused'; 
+            } else {
+                cd.style.animationPlayState = 'running'; 
+            }
+        }
+
+       
+        cd.addEventListener('click', togglePlayback); 
+        audio.addEventListener('play', syncAnimation); 
+        audio.addEventListener('pause', syncAnimation); 
+    });
+</script>
+
+
+
+
+
+
+</body>
+</html>
